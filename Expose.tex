@@ -1,0 +1,24 @@
+\pdfminorversion=7
+
+\documentclass[
+	a4paper,	% Page size
+	12pt,		% Default font size
+]{report}
+
+\include{metadata}
+\include{format}
+\include{style}
+
+\begin{document}
+	\begin{minipage}{0.7\textwidth}
+		\Large
+		\metadataType{} im Studiengang \metadataCourse \\
+		Exposé
+	\end{minipage}
+	\begin{minipage}{0.29\textwidth}
+		\flushright \includegraphics[width=\textwidth]{images/hfu_logo.eps}
+	\end{minipage}
+	\input{content}
+	\bibliography{bibliography}
+	\markboth{\bibname}{}
+\end{document}
